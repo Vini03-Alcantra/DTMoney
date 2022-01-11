@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   margin-top: 4rem;
@@ -18,7 +18,7 @@ export const Container = styled.div`
     td{
       padding: 1rem 2rem;
       border: 0;
-      background: var(--shape);
+      background: var(yarn s--shape);
       color: var(--text-body);
       border-radius: .25rem;
 

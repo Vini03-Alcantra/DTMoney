@@ -3,12 +3,15 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   :root{
     --background: #f0f2f5;
-    --red: #f0f2f5;
+    --red: #e52e4d;
     --blue: #5429cc;
-    --green: #33cc95;
+    --green: #34CC96;
+
     --blue-light: #6933ff;
+
     --text-title: #363f5f;
     --text-body: #969cb3;
+
     --background: #f0f2f5;
     --shape: #ffffff;
   }
@@ -19,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
+  html{
     @media(max-width: 1080px){
       font-size: 93.75%;
     }
@@ -31,24 +34,15 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background: var(--background);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  body, input, textarea, button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-  }
-
-  h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 600;
+    -webkit-font-smooting: antialiased;
   }
 
   button{
-    cursor: pointer
+    cursor: pointer;
   }
 
   [disabled]{
-    opacity: 0.6;
-    cursor: not-allowed;
+    opacity: .6;
+    cursor: pointer;
   }
 `
