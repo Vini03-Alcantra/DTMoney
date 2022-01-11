@@ -78,7 +78,7 @@ export const GlobalStyle = createGlobalStyle`
     transition: filter .5s;
 
     &:hover {
-      filter: brightness(.75)
+      filter: brightness(.75  )
     }
   }
 `
