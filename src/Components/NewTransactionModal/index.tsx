@@ -7,7 +7,7 @@ import outcomeImg from "../../assets/outcome.svg"
 
 import { Container, TransactionTypeContainer, RadioBox } from "./styles";
 import { api } from "../../services/api";
-import { TransactionsContext } from "../../TransactionsContext";
+import { useTransactions } from "../../hooks/useTransactions";
 
 interface NewTransactionModalProps{
   isOpen: boolean;
@@ -15,7 +15,7 @@ interface NewTransactionModalProps{
 }
 
 export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModalProps){
-  const { createTransaction } = useContext(TransactionsContext)
+  const { createTransaction } = useTransactions()
 
   const [type, setType] = useState('deposit')
   const [title, setTitle] = useState("")
