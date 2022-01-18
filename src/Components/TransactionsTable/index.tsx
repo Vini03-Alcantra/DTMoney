@@ -3,10 +3,7 @@ import { TransactionsContext } from "../../TransactionsContext"
 import {Container} from "./styles"
 
 export function TransactionsTable(){
-
   const {transactions} = useContext(TransactionsContext)
-
-  console.log(transactions)
 
   return (
     <Container>
